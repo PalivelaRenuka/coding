@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int n,sum=0,cube,r,o;
+	printf("enter any number");
+	scanf("%d",&n);
+	o=n;
+	while(n!=0)
+	{
+		r=n%10;
+		printf("%d\n",r);
+		cube=pow(r,3);
+		printf("%d\n",cube);
+		sum=sum+cube;
+		printf("%d\n",sum);
+	   n=n/10;
+	   printf("%d\n",n);
+	}
+	if(sum==o)
+	printf("%d\n is armstrong",o);
+	else
+	printf("%d\n is not amstrong",o);
+}
